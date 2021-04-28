@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Mar  5 16:56:23 2021
+# Process ID: 7916
+# Current directory: C:/Users/LOLNO/CPU_Project/CPU_Project.runs/full_testbench_bd_cu_ram_0_0_synth_1
+# Command line: vivado.exe -log full_testbench_bd_cu_ram_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source full_testbench_bd_cu_ram_0_0.tcl
+# Log file: C:/Users/LOLNO/CPU_Project/CPU_Project.runs/full_testbench_bd_cu_ram_0_0_synth_1/full_testbench_bd_cu_ram_0_0.vds
+# Journal file: C:/Users/LOLNO/CPU_Project/CPU_Project.runs/full_testbench_bd_cu_ram_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source full_testbench_bd_cu_ram_0_0.tcl -notrace

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Apr 28 14:00:46 2021
+# Process ID: 13108
+# Current directory: C:/Users/LOLNO/Desktop/CPU_Project.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12512 C:\Users\LOLNO\Desktop\CPU_Project.xpr\CPU_Project.xpr
+# Log file: C:/Users/LOLNO/Desktop/CPU_Project.xpr/vivado.log
+# Journal file: C:/Users/LOLNO/Desktop/CPU_Project.xpr\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/LOLNO/Desktop/CPU_Project.xpr/CPU_Project.xpr
+update_compile_order -fileset sources_1

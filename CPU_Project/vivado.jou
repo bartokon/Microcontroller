@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Apr 28 13:21:36 2021
+# Process ID: 16104
+# Current directory: C:/Users/LOLNO/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8872
+# Log file: C:/Users/LOLNO/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/LOLNO/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+set origin_dir "."
+source C:/Users/LOLNO/Desktop/MicroController_Verilog-main/MicroController_Verilog-main/project_TCL.tcl
+C:/Users/LOLNO/Desktop/MicroController_Verilog-main/MicroController_Verilog-main/project_TCL.tcl -tclargs --origin_dir="/"
+C:/Users/LOLNO/Desktop/MicroController_Verilog-main/MicroController_Verilog-main/project_TCL.tcl -tclargs --origin_dir=/
+C:/Users/LOLNO/Desktop/MicroController_Verilog-main/MicroController_Verilog-main/project_TCL.tcl -tclargs --origin_dir=.
+source C:/Users/LOLNO/Desktop/MicroController_Verilog-main/MicroController_Verilog-main/project_TCL.tcl -tclargs --origin_dir=.
+source C:/Users/LOLNO/Desktop/MicroController_Verilog-main/MicroController_Verilog-main/project_TCL.tcl
+source C:/Users/LOLNO/Desktop/MicroController_Verilog-main/MicroController_Verilog-main/project_TCL.tcl
+source C:/Users/LOLNO/Desktop/MicroController_Verilog-main/MicroController_Verilog-main/project_TCL.tcl
+source C:/Users/LOLNO/Desktop/MicroController_Verilog-main/MicroController_Verilog-main/project_TCL.tcl
+source C:/Users/LOLNO/Desktop/MicroController_Verilog-main/MicroController_Verilog-main/project_TCL.tcl
+current_project CPU_Project
+source C:/Users/LOLNO/Desktop/MicroController_Verilog-main/MicroController_Verilog-main/project_TCL.tcl
+current_project CPU_Project(2)
+close_project
+${_xil_proj_name_}
+close_project
+source C:/Users/LOLNO/Desktop/MicroController_Verilog-main/MicroController_Verilog-main/project_TCL.tcl
+create_project -help
+source C:/Users/LOLNO/Desktop/MicroController_Verilog-main/MicroController_Verilog-main/project_TCL.tcl
+source C:/Users/LOLNO/Desktop/MicroController_Verilog-main/MicroController_Verilog-main/project_TCL.tcl C:/Users/LOLNO/Desktop/MicroController_Verilog-main/MicroController_Verilog-main/
+source C:/Users/LOLNO/Desktop/MicroController_Verilog-main/MicroController_Verilog-main/project_TCL.tcl -dir C:/Users/LOLNO/Desktop/MicroController_Verilog-main/MicroController_Verilog-main/
+open_project C:/Users/LOLNO/CPU_Project/CPU_Project.xpr
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  {c:/Users/LOLNO/ip_repo/myipaxilite_1.0 c:/Users/LOLNO/ip_repo/myip_1.0 c:/Users/LOLNO/AppData/Roaming/Xilinx/ip_repo} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {c:/Users/LOLNO/ip_repo/myipaxilite_1.0 c:/Users/LOLNO/AppData/Roaming/Xilinx/ip_repo} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  c:/Users/LOLNO/AppData/Roaming/Xilinx/ip_repo [current_project]
+update_ip_catalog
+archive_project C:/Users/LOLNO/Desktop/CPU_Project.xpr.zip -temp_dir C:/Users/LOLNO/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-16104-DESKTOP-VSR39OG -force -exclude_run_results
+write_project_tcl -dump_project_info {C:/Users/LOLNO/Desktop/CPU_Project.tcl}
+archive_project C:/Users/LOLNO/Desktop/CPU_Project.xpr.zip -temp_dir C:/Users/LOLNO/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-16104-DESKTOP-VSR39OG -force -include_config_settings

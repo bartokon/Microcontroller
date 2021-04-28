@@ -1,0 +1,9 @@
+control_unit_tb_auto_bd_xlslice_0_0.v,verilog,xil_defaultlib,../../../bd/control_unit_tb_auto_bd/ip/control_unit_tb_auto_bd_xlslice_0_0/sim/control_unit_tb_auto_bd_xlslice_0_0.v,
+control_unit_tb_auto_bd_xlslice_1_0.v,verilog,xil_defaultlib,../../../bd/control_unit_tb_auto_bd/ip/control_unit_tb_auto_bd_xlslice_1_0/sim/control_unit_tb_auto_bd_xlslice_1_0.v,
+control_unit_tb_auto_bd_alu_0_0.v,verilog,xil_defaultlib,../../../bd/control_unit_tb_auto_bd/ip/control_unit_tb_auto_bd_alu_0_0/sim/control_unit_tb_auto_bd_alu_0_0.v,
+control_unit_tb_auto_bd_alu_input_output_reg_0_0.v,verilog,xil_defaultlib,../../../bd/control_unit_tb_auto_bd/ip/control_unit_tb_auto_bd_alu_input_output_reg_0_0/sim/control_unit_tb_auto_bd_alu_input_output_reg_0_0.v,
+control_unit_tb_auto_bd_alu_input_output_reg_0_1.v,verilog,xil_defaultlib,../../../bd/control_unit_tb_auto_bd/ip/control_unit_tb_auto_bd_alu_input_output_reg_0_1/sim/control_unit_tb_auto_bd_alu_input_output_reg_0_1.v,
+control_unit_tb_auto_bd_general_registers_0_0.v,verilog,xil_defaultlib,../../../bd/control_unit_tb_auto_bd/ip/control_unit_tb_auto_bd_general_registers_0_0/sim/control_unit_tb_auto_bd_general_registers_0_0.v,
+control_unit_tb_auto_bd_control_unit_0_0.v,verilog,xil_defaultlib,../../../bd/control_unit_tb_auto_bd/ip/control_unit_tb_auto_bd_control_unit_0_0/sim/control_unit_tb_auto_bd_control_unit_0_0.v,
+control_unit_tb_auto_bd.v,verilog,xil_defaultlib,../../../bd/control_unit_tb_auto_bd/sim/control_unit_tb_auto_bd.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,59 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.473623",
+   "Default View_TopLeft":"-114,-201",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port clk -pg 1 -lvl 0 -x 0 -y 710 -defaultsOSRD
+preplace port cu_enable -pg 1 -lvl 0 -x 0 -y 380 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x 0 -y 730 -defaultsOSRD
+preplace portBus gen_reg_data_out -pg 1 -lvl 8 -x 2270 -y 700 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 1 -x 120 -y 650 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 1 -x 120 -y 460 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 5 -x 1590 -y 840 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 5 -x 1590 -y 530 -defaultsOSRD
+preplace inst alu_0 -pg 1 -lvl 3 -x 740 -y 110 -defaultsOSRD
+preplace inst alu_op_A -pg 1 -lvl 2 -x 370 -y 660 -defaultsOSRD
+preplace inst alu_op_B -pg 1 -lvl 2 -x 370 -y 470 -defaultsOSRD
+preplace inst cu_ram_0 -pg 1 -lvl 6 -x 1880 -y 510 -defaultsOSRD
+preplace inst general_registers_0 -pg 1 -lvl 6 -x 1880 -y 820 -defaultsOSRD
+preplace inst multiplexer_0 -pg 1 -lvl 7 -x 2140 -y 820 -defaultsOSRD
+preplace inst multiplexer_1 -pg 1 -lvl 5 -x 1590 -y 370 -defaultsOSRD
+preplace inst control_unit_0 -pg 1 -lvl 4 -x 1210 -y 380 -defaultsOSRD
+preplace inst program_memory_6 -pg 1 -lvl 3 -x 740 -y 680 -defaultsOSRD
+preplace netloc alu_0_operand_C 1 3 3 960 760 NJ 760 NJ
+preplace netloc alu_0_overflow 1 3 1 1010 80n
+preplace netloc alu_0_underflow 1 3 1 1000 100n
+preplace netloc alu_op_A_data_out 1 2 1 510 70n
+preplace netloc alu_op_B_data_out 1 2 1 500 90n
+preplace netloc clk_1 1 0 6 NJ 710 220 560 530 440 1010 590 NJ 590 1720
+preplace netloc control_unit_0_alu_instruction 1 2 3 540 220 NJ 220 1420
+preplace netloc control_unit_0_alu_register_enable 1 0 5 20 230 NJ 230 NJ 230 NJ 230 1410
+preplace netloc control_unit_0_register_read 1 4 2 1460 770 1740
+preplace netloc control_unit_0_register_select 1 4 2 1420 780 1700J
+preplace netloc control_unit_0_register_write 1 4 2 1430 290 1710
+preplace netloc cu_enable_1 1 0 4 NJ 380 NJ 380 NJ 380 940J
+preplace netloc reset_1 1 0 6 NJ 730 230 570 520 460 970 600 NJ 600 1730
+preplace netloc xlslice_0_Dout 1 1 1 NJ 650
+preplace netloc xlslice_1_Dout 1 1 1 NJ 460
+preplace netloc control_unit_0_ram_address 1 4 2 N 450 NJ
+preplace netloc xlslice_2_Dout 1 5 1 NJ 840
+preplace netloc xlslice_3_Dout 1 5 1 NJ 530
+preplace netloc control_unit_0_register_enable 1 4 3 1440 940 NJ 940 2030J
+preplace netloc multiplexer_0_out 1 1 7 240 750 NJ 750 NJ 750 1480 700 NJ 700 NJ 700 2250
+preplace netloc general_registers_0_data_out 1 6 1 N 820
+preplace netloc cu_ram_0_data_out 1 6 1 2020 510n
+preplace netloc program_memory_0_program_data 1 3 1 980 300n
+preplace netloc control_unit_0_program_data_address 1 2 3 540 610 NJ 610 1410
+preplace netloc alu_0_A_bigger 1 3 1 990 120n
+preplace netloc alu_0_B_bigger 1 3 1 970 140n
+preplace netloc alu_0_AB_same 1 3 1 950 160n
+preplace netloc multiplexer_1_out 1 5 1 1740 370n
+preplace netloc control_unit_0_output_data 1 4 1 1470 370n
+preplace netloc control_unit_0_ram_cu_select 1 4 1 1450 350n
+levelinfo -pg 1 0 120 370 740 1210 1590 1880 2140 2270
+pagesize -pg 1 -db -bbox -sgen -120 0 2470 950
+"
+}
+0

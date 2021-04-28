@@ -1,0 +1,24 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib "C:/Users/LOLNO/CPU_Project/CPU_Project.srcs/sources_1/new/params.v" --include "../../../../CPU_Project.srcs/sources_1/new" \
+"../../../../CPU_Project.srcs/sources_1/new/alu.v" \
+"../../../../CPU_Project.srcs/sources_1/new/alu_input_output_reg.v" \
+"../../../../CPU_Project.srcs/sources_1/new/general_registers.v" \
+"../../../../CPU_Project.srcs/sources_1/new/control_unit.v" \
+"../../../../CPU_Project.ip_user_files/bd/control_unit_tb_auto_bd/ip/control_unit_tb_auto_bd_xlslice_0_0/sim/control_unit_tb_auto_bd_xlslice_0_0.v" \
+"../../../../CPU_Project.ip_user_files/bd/control_unit_tb_auto_bd/ip/control_unit_tb_auto_bd_xlslice_1_0/sim/control_unit_tb_auto_bd_xlslice_1_0.v" \
+"../../../../CPU_Project.ip_user_files/bd/control_unit_tb_auto_bd/ip/control_unit_tb_auto_bd_alu_0_0/sim/control_unit_tb_auto_bd_alu_0_0.v" \
+"../../../../CPU_Project.ip_user_files/bd/control_unit_tb_auto_bd/ip/control_unit_tb_auto_bd_alu_input_output_reg_0_0/sim/control_unit_tb_auto_bd_alu_input_output_reg_0_0.v" \
+"../../../../CPU_Project.ip_user_files/bd/control_unit_tb_auto_bd/ip/control_unit_tb_auto_bd_alu_input_output_reg_0_1/sim/control_unit_tb_auto_bd_alu_input_output_reg_0_1.v" \
+"../../../../CPU_Project.ip_user_files/bd/control_unit_tb_auto_bd/ip/control_unit_tb_auto_bd_general_registers_0_0/sim/control_unit_tb_auto_bd_general_registers_0_0.v" \
+"../../../../CPU_Project.ip_user_files/bd/control_unit_tb_auto_bd/ip/control_unit_tb_auto_bd_control_unit_0_0/sim/control_unit_tb_auto_bd_control_unit_0_0.v" \
+"../../../../CPU_Project.ip_user_files/bd/control_unit_tb_auto_bd/sim/control_unit_tb_auto_bd.v" \
+"../../../../CPU_Project.srcs/Unit_Tests/new/alu_tb_auto.v" \
+"../../../../CPU_Project.srcs/Unit_Tests/new/control_unit_tb_auto.v" \
+"../../../../CPU_Project.srcs/Unit_Tests/new/general_registers_tb_auto.v" \
+"../../../../CPU_Project.srcs/Unit_Tests/new/run_all_tests.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

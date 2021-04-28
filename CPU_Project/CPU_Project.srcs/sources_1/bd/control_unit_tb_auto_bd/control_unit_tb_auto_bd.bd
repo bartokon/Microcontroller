@@ -1,0 +1,512 @@
+{
+    "design": {
+        "design_info": {
+            "boundary_crc": "0xDB497A2757CF1C7E",
+            "device": "xc7z007sclg225-1",
+            "gen_directory": "../../../../CPU_Project.gen/sources_1/bd/control_unit_tb_auto_bd",
+            "name": "control_unit_tb_auto_bd",
+            "rev_ctrl_bd_flag": "RevCtrlBdOff",
+            "synth_flow_mode": "Hierarchical",
+            "tool_version": "2020.2",
+            "validated": "true"
+        },
+        "design_tree": {
+            "xlslice_0": "",
+            "xlslice_1": "",
+            "alu_0": "",
+            "alu_op_A": "",
+            "alu_op_B": "",
+            "general_registers_0": "",
+            "control_unit_0": ""
+        },
+        "ports": {
+            "reset": {
+                "direction": "I"
+            },
+            "clk": {
+                "direction": "I"
+            },
+            "program_data": {
+                "direction": "I",
+                "left": "15",
+                "right": "0"
+            },
+            "gen_reg_data_out": {
+                "type": "data",
+                "direction": "O",
+                "left": "7",
+                "right": "0",
+                "parameters": {
+                    "LAYERED_METADATA": {
+                        "value": "undef",
+                        "value_src": "default"
+                    }
+                }
+            },
+            "cu_enable": {
+                "direction": "I"
+            }
+        },
+        "components": {
+            "xlslice_0": {
+                "vlnv": "xilinx.com:ip:xlslice:1.0",
+                "xci_name": "control_unit_tb_auto_bd_xlslice_0_0",
+                "xci_path": "ip\\control_unit_tb_auto_bd_xlslice_0_0\\control_unit_tb_auto_bd_xlslice_0_0.xci",
+                "inst_hier_path": "xlslice_0",
+                "parameters": {
+                    "DIN_WIDTH": {
+                        "value": "2"
+                    }
+                }
+            },
+            "xlslice_1": {
+                "vlnv": "xilinx.com:ip:xlslice:1.0",
+                "xci_name": "control_unit_tb_auto_bd_xlslice_1_0",
+                "xci_path": "ip\\control_unit_tb_auto_bd_xlslice_1_0\\control_unit_tb_auto_bd_xlslice_1_0.xci",
+                "inst_hier_path": "xlslice_1",
+                "parameters": {
+                    "DIN_FROM": {
+                        "value": "1"
+                    },
+                    "DIN_TO": {
+                        "value": "1"
+                    },
+                    "DIN_WIDTH": {
+                        "value": "2"
+                    },
+                    "DOUT_WIDTH": {
+                        "value": "1"
+                    }
+                }
+            },
+            "alu_0": {
+                "vlnv": "xilinx.com:module_ref:alu:1.0",
+                "xci_name": "control_unit_tb_auto_bd_alu_0_0",
+                "xci_path": "ip\\control_unit_tb_auto_bd_alu_0_0\\control_unit_tb_auto_bd_alu_0_0.xci",
+                "inst_hier_path": "alu_0",
+                "reference_info": {
+                    "ref_type": "hdl",
+                    "ref_name": "alu",
+                    "boundary_crc": "0x0"
+                },
+                "ports": {
+                    "operand_A": {
+                        "direction": "I",
+                        "left": "7",
+                        "right": "0"
+                    },
+                    "operand_B": {
+                        "direction": "I",
+                        "left": "7",
+                        "right": "0"
+                    },
+                    "operand_C": {
+                        "direction": "O",
+                        "left": "7",
+                        "right": "0"
+                    },
+                    "overflow": {
+                        "direction": "O"
+                    },
+                    "underflow": {
+                        "direction": "O"
+                    },
+                    "A_bigger": {
+                        "direction": "O"
+                    },
+                    "B_bigger": {
+                        "direction": "O"
+                    },
+                    "AB_same": {
+                        "direction": "O"
+                    },
+                    "instruction": {
+                        "direction": "I",
+                        "left": "3",
+                        "right": "0"
+                    },
+                    "clk": {
+                        "type": "clk",
+                        "direction": "I",
+                        "parameters": {
+                            "ASSOCIATED_RESET": {
+                                "value": "reset",
+                                "value_src": "constant"
+                            }
+                        }
+                    },
+                    "reset": {
+                        "type": "rst",
+                        "direction": "I"
+                    }
+                }
+            },
+            "alu_op_A": {
+                "vlnv": "xilinx.com:module_ref:alu_input_output_reg:1.0",
+                "xci_name": "control_unit_tb_auto_bd_alu_input_output_reg_0_0",
+                "xci_path": "ip\\control_unit_tb_auto_bd_alu_input_output_reg_0_0\\control_unit_tb_auto_bd_alu_input_output_reg_0_0.xci",
+                "inst_hier_path": "alu_op_A",
+                "reference_info": {
+                    "ref_type": "hdl",
+                    "ref_name": "alu_input_output_reg",
+                    "boundary_crc": "0x0"
+                },
+                "ports": {
+                    "data_in": {
+                        "direction": "I",
+                        "left": "7",
+                        "right": "0"
+                    },
+                    "data_out": {
+                        "direction": "O",
+                        "left": "7",
+                        "right": "0"
+                    },
+                    "enable": {
+                        "direction": "I"
+                    },
+                    "clk": {
+                        "type": "clk",
+                        "direction": "I",
+                        "parameters": {
+                            "ASSOCIATED_RESET": {
+                                "value": "reset",
+                                "value_src": "constant"
+                            }
+                        }
+                    },
+                    "reset": {
+                        "type": "rst",
+                        "direction": "I"
+                    }
+                }
+            },
+            "alu_op_B": {
+                "vlnv": "xilinx.com:module_ref:alu_input_output_reg:1.0",
+                "xci_name": "control_unit_tb_auto_bd_alu_input_output_reg_0_1",
+                "xci_path": "ip\\control_unit_tb_auto_bd_alu_input_output_reg_0_1\\control_unit_tb_auto_bd_alu_input_output_reg_0_1.xci",
+                "inst_hier_path": "alu_op_B",
+                "reference_info": {
+                    "ref_type": "hdl",
+                    "ref_name": "alu_input_output_reg",
+                    "boundary_crc": "0x0"
+                },
+                "ports": {
+                    "data_in": {
+                        "direction": "I",
+                        "left": "7",
+                        "right": "0"
+                    },
+                    "data_out": {
+                        "direction": "O",
+                        "left": "7",
+                        "right": "0"
+                    },
+                    "enable": {
+                        "direction": "I"
+                    },
+                    "clk": {
+                        "type": "clk",
+                        "direction": "I",
+                        "parameters": {
+                            "ASSOCIATED_RESET": {
+                                "value": "reset",
+                                "value_src": "constant"
+                            }
+                        }
+                    },
+                    "reset": {
+                        "type": "rst",
+                        "direction": "I"
+                    }
+                }
+            },
+            "general_registers_0": {
+                "vlnv": "xilinx.com:module_ref:general_registers:1.0",
+                "xci_name": "control_unit_tb_auto_bd_general_registers_0_0",
+                "xci_path": "ip\\control_unit_tb_auto_bd_general_registers_0_0\\control_unit_tb_auto_bd_general_registers_0_0.xci",
+                "inst_hier_path": "general_registers_0",
+                "reference_info": {
+                    "ref_type": "hdl",
+                    "ref_name": "general_registers",
+                    "boundary_crc": "0x0"
+                },
+                "ports": {
+                    "data_in": {
+                        "direction": "I",
+                        "left": "7",
+                        "right": "0"
+                    },
+                    "data_out": {
+                        "direction": "O",
+                        "left": "7",
+                        "right": "0"
+                    },
+                    "read": {
+                        "direction": "I"
+                    },
+                    "write": {
+                        "direction": "I"
+                    },
+                    "select_reg": {
+                        "direction": "I",
+                        "left": "3",
+                        "right": "0"
+                    },
+                    "enable": {
+                        "direction": "I"
+                    },
+                    "clk": {
+                        "type": "clk",
+                        "direction": "I",
+                        "parameters": {
+                            "ASSOCIATED_RESET": {
+                                "value": "reset",
+                                "value_src": "constant"
+                            }
+                        }
+                    },
+                    "reset": {
+                        "type": "rst",
+                        "direction": "I"
+                    }
+                }
+            },
+            "control_unit_0": {
+                "vlnv": "xilinx.com:module_ref:control_unit:1.0",
+                "xci_name": "control_unit_tb_auto_bd_control_unit_0_0",
+                "xci_path": "ip\\control_unit_tb_auto_bd_control_unit_0_0\\control_unit_tb_auto_bd_control_unit_0_0.xci",
+                "inst_hier_path": "control_unit_0",
+                "reference_info": {
+                    "ref_type": "hdl",
+                    "ref_name": "control_unit",
+                    "boundary_crc": "0x0"
+                },
+                "ports": {
+                    "alu_instruction": {
+                        "direction": "O",
+                        "left": "3",
+                        "right": "0"
+                    },
+                    "alu_register_enable": {
+                        "direction": "O",
+                        "left": "1",
+                        "right": "0"
+                    },
+                    "register_enable": {
+                        "direction": "O",
+                        "left": "1",
+                        "right": "0"
+                    },
+                    "register_write": {
+                        "direction": "O"
+                    },
+                    "register_read": {
+                        "direction": "O"
+                    },
+                    "register_select": {
+                        "direction": "O",
+                        "left": "3",
+                        "right": "0"
+                    },
+                    "program_data": {
+                        "direction": "I",
+                        "left": "15",
+                        "right": "0"
+                    },
+                    "program_data_address": {
+                        "direction": "O",
+                        "left": "15",
+                        "right": "0"
+                    },
+                    "output_data": {
+                        "direction": "O",
+                        "left": "7",
+                        "right": "0"
+                    },
+                    "ram_address": {
+                        "direction": "O",
+                        "left": "7",
+                        "right": "0"
+                    },
+                    "overflow": {
+                        "direction": "I"
+                    },
+                    "underflow": {
+                        "direction": "I"
+                    },
+                    "A_bigger": {
+                        "direction": "I"
+                    },
+                    "B_bigger": {
+                        "direction": "I"
+                    },
+                    "AB_same": {
+                        "direction": "I"
+                    },
+                    "ram_cu_select": {
+                        "direction": "O",
+                        "left": "1",
+                        "right": "0"
+                    },
+                    "enable": {
+                        "direction": "I"
+                    },
+                    "clk": {
+                        "type": "clk",
+                        "direction": "I",
+                        "parameters": {
+                            "ASSOCIATED_RESET": {
+                                "value": "reset",
+                                "value_src": "constant"
+                            }
+                        }
+                    },
+                    "reset": {
+                        "type": "rst",
+                        "direction": "I"
+                    }
+                }
+            }
+        },
+        "nets": {
+            "alu_op_A_data_out": {
+                "ports": [
+                    "alu_op_A/data_out",
+                    "alu_0/operand_A"
+                ]
+            },
+            "alu_op_B_data_out": {
+                "ports": [
+                    "alu_op_B/data_out",
+                    "alu_0/operand_B"
+                ]
+            },
+            "control_unit_0_alu_instruction": {
+                "ports": [
+                    "control_unit_0/alu_instruction",
+                    "alu_0/instruction"
+                ]
+            },
+            "xlslice_0_Dout": {
+                "ports": [
+                    "xlslice_0/Dout",
+                    "alu_op_A/enable"
+                ]
+            },
+            "xlslice_1_Dout": {
+                "ports": [
+                    "xlslice_1/Dout",
+                    "alu_op_B/enable"
+                ]
+            },
+            "control_unit_0_alu_register_enable": {
+                "ports": [
+                    "control_unit_0/alu_register_enable",
+                    "xlslice_1/Din",
+                    "xlslice_0/Din"
+                ]
+            },
+            "alu_0_overflow": {
+                "ports": [
+                    "alu_0/overflow",
+                    "control_unit_0/overflow"
+                ]
+            },
+            "alu_0_underflow": {
+                "ports": [
+                    "alu_0/underflow",
+                    "control_unit_0/underflow"
+                ]
+            },
+            "alu_0_operand_C": {
+                "ports": [
+                    "alu_0/operand_C",
+                    "general_registers_0/data_in"
+                ]
+            },
+            "control_unit_0_register_select": {
+                "ports": [
+                    "control_unit_0/register_select",
+                    "general_registers_0/select_reg"
+                ]
+            },
+            "control_unit_0_register_enable": {
+                "ports": [
+                    "control_unit_0/register_enable",
+                    "general_registers_0/enable"
+                ]
+            },
+            "general_registers_0_data_out": {
+                "ports": [
+                    "general_registers_0/data_out",
+                    "gen_reg_data_out",
+                    "alu_op_A/data_in",
+                    "alu_op_B/data_in"
+                ]
+            },
+            "control_unit_0_register_write": {
+                "ports": [
+                    "control_unit_0/register_write",
+                    "general_registers_0/write"
+                ]
+            },
+            "control_unit_0_register_read": {
+                "ports": [
+                    "control_unit_0/register_read",
+                    "general_registers_0/read"
+                ]
+            },
+            "clk_1": {
+                "ports": [
+                    "clk",
+                    "alu_0/clk",
+                    "alu_op_A/clk",
+                    "alu_op_B/clk",
+                    "general_registers_0/clk",
+                    "control_unit_0/clk"
+                ]
+            },
+            "reset_1": {
+                "ports": [
+                    "reset",
+                    "alu_0/reset",
+                    "alu_op_A/reset",
+                    "alu_op_B/reset",
+                    "general_registers_0/reset",
+                    "control_unit_0/reset"
+                ]
+            },
+            "program_data_1": {
+                "ports": [
+                    "program_data",
+                    "control_unit_0/program_data"
+                ]
+            },
+            "cu_enable_1": {
+                "ports": [
+                    "cu_enable",
+                    "control_unit_0/enable"
+                ]
+            },
+            "alu_0_A_bigger": {
+                "ports": [
+                    "alu_0/A_bigger",
+                    "control_unit_0/A_bigger"
+                ]
+            },
+            "alu_0_B_bigger": {
+                "ports": [
+                    "alu_0/B_bigger",
+                    "control_unit_0/B_bigger"
+                ]
+            },
+            "alu_0_AB_same": {
+                "ports": [
+                    "alu_0/AB_same",
+                    "control_unit_0/AB_same"
+                ]
+            }
+        }
+    }
+}
